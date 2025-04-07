@@ -272,6 +272,8 @@
 
     .marketplace-container{
         padding: 0 0;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
     }
     .marketplace-card-container {
         flex-direction: row;
@@ -282,6 +284,7 @@
 
 
     }
+
 
     .market-place-container-upper-section {
         display: flex;
