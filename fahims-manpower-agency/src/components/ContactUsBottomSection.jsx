@@ -26,9 +26,9 @@ const ContactUsBottomSection = () => {
                     <div className="contact-us-card-col-2 fade-in">
                         <div className="contact-us-card fade-in">
                             <h3>Our Address</h3>
-                            <p>NO 283-1/1, 2/1, 3/1, <br/>MAIN STREET,
-                                COLOMBO-11.
-                                SRI LANKA.</p>
+                            <p>No 283-1/1, 2/1, 3/1, <br/>Main Street,<br/>
+                                Colombo-11.<br/>
+                                Sri Lanka.</p>
                         </div>
                         <div className="contact-us-card fade-in">
                             <h3>Get In Touch</h3>

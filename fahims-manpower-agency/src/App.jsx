@@ -1,34 +1,64 @@
-import {useEffect, useState} from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Nav from "./components/Nav.jsx";
-import HomePage from "./components/HomePage.jsx";
-import Footer from "./components/Footer.jsx";
-import {applyScrollAnimation} from "./scrollAnimation.js";
+import './App.css';
+import './components/LoadingScreen.css'; // Make sure you have this
+import Nav from './components/Nav.jsx';
+import HomePage from './components/HomePage.jsx';
+import Footer from './components/Footer.jsx';
+import { applyScrollAnimation } from './scrollAnimation.js';
+import LoadingScreen from './components/LoadingScreen.jsx'; // New splash screen
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
-        applyScrollAnimation();
+        // Disable scrolling during loading
+        document.body.style.overflow = 'hidden';
+
+        const timer = setTimeout(() => {
+            setLoading(false);
+            // Re-enable scrolling
+            document.body.style.overflow = 'auto';
+        }, 3300); // Match your splash duration
+
+        return () => clearTimeout(timer);
     }, []);
-  return (
-      <Router>
-          <div className="nav-section">
-              <Nav />
-          </div>
 
-          <Routes>
-              <Route path="/" element={<HomePage />} />
-              {/*<Route path="/invoice-financing" element={<InvoiceFinancingPage />} />*/}
-          </Routes>
+    useEffect(() => {
+        if (!loading) {
+            applyScrollAnimation(); // Apply scroll animation only after splash screen
+        }
+    }, [loading]);
 
-          <div className="footer-section-container">
-              <Footer />
-          </div>
-      </Router>  )
+    return (
+        <Router>
+            {/* Splash screen wrapper */}
+            {loading && (
+                <div className={`loading-container`}>
+                    <LoadingScreen />
+                </div>
+            )}
+
+            {/* Main app */}
+            {!loading && (
+                <div className="main-app">
+                    <div className="nav-section">
+                        <Nav />
+                    </div>
+
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        {/* Add more routes as needed */}
+                    </Routes>
+
+                    <div className="footer-section-container">
+                        <Footer />
+                    </div>
+                </div>
+            )}
+        </Router>
+    );
 }
 
-export default App
+export default App;
