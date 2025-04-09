@@ -5,7 +5,7 @@ function LoadingScreen() {
     return (
         <div className="loading-inner">
             <img className="loading-text" src={fahimsLogo} alt="Logo"/>
-            <h2 className="slogan-text">New Fahim Enterprises</h2>
+            <h2 className="slogan-text">New Fahim Enterprises (PVT) LTD</h2>
         </div>
     );
 }
