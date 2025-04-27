@@ -14,6 +14,18 @@
     z-index: 1000;
 }
 
+.nav-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make sure .nav-container stays flexible */
 .nav-container {
     display: flex;
     justify-content: space-between;

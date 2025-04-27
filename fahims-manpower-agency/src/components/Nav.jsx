@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Nav.css"; // Import the CSS file
+import "./Nav.css";
 import navBarLogo from '../assets/fahims-logo.svg';
 
 const Nav = () => {
@@ -8,20 +8,23 @@ const Nav = () => {
     return (
         <nav className="nav">
             <div className="nav-container">
-                {/* Logo on the Left */}
+                {/* Left: Logo */}
                 <div className="nav-logo">
                     <a href="/"><img src={navBarLogo} alt="VePay Logo" /></a>
                 </div>
 
-                {/* Menu and Button Wrapper (Aligned to the Right) */}
+                {/* Center: Company Name */}
+                <div className="nav-title">
+                    NEW FAHIM ENTERPRISES
+                </div>
+
+                {/* Right: Links + Hamburger */}
                 <div className="nav-right">
                     <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
                         <li><a href="#services">Our Services</a></li>
                         <li><a href="#whyChooseUs">Why Choose Us</a></li>
-                        <li><a href="#indsutries"> Industries We Serve </a></li>
-                        <li><a href="#aboutUs">About US</a></li>
-
-                        {/* Move Contact Us button inside the mobile menu */}
+                        <li><a href="#indsutries">Industries We Serve</a></li>
+                        <li><a href="#aboutUs">About Us</a></li>
                         <li className="nav-contact-btn">
                             <a href="#contactUs">
                                 <button className="nav-button">Contact Us</button>
@@ -29,7 +32,6 @@ const Nav = () => {
                         </li>
                     </ul>
 
-                    {/* Hamburger Menu */}
                     <div className="nav-toggle" onClick={() => setMenuOpen(!menuOpen)}>
                         <span></span>
                         <span></span>
