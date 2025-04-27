@@ -11,29 +11,34 @@ const Footer = () => {
 
             <div className="footer-container">
                 {/* Left side - Logo and Links */}
-                    <img src={footerLogoLeft} alt="Darxforge Logo" className="footer-logo"/>
-                    <div className="footer-links">
-                        <a href="">Privacy Policy</a>
-                        <a href="">Terms & Conditions</a>
-                        <a href="#services">Our Services</a>
-                        <a href="#aboutUs">About Us</a>
-                        <a href="#contactUs">Contact Us</a>
-                    </div>
+                <img src={footerLogoLeft} alt="Darxforge Logo" className="footer-logo"/>
+                <div className="footer-links">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="#services">Our Services</a>
+                    <a href="#aboutUs">About Us</a>
+                    <a href="#contactUs">Contact Us</a>
+                </div>
 
                 {/* Right side - Logos and background image */}
-                    <div className="footer-logos">
-                        <img src={socialMediaLogo1} alt="Logo 1" className="footer-social-logo"/>
-                        <img src={socialMediaLogo2} alt="Logo 2" className="footer-social-logo"/>
-                        <img src={socialMediaLogo3} alt="Logo 3" className="footer-social-logo"/>
-                        <img src={socialMediaLogo4} alt="Logo 4" className="footer-social-logo"/>
-                    </div>
+                <div className="footer-logos">
+                    <img src={socialMediaLogo1} alt="Logo 1" className="footer-social-logo"/>
+                    <img src={socialMediaLogo2} alt="Logo 2" className="footer-social-logo"/>
+                    <img src={socialMediaLogo3} alt="Logo 3" className="footer-social-logo"/>
+                    <img src={socialMediaLogo4} alt="Logo 4" className="footer-social-logo"/>
+                </div>
 
             </div>
 
             {/* Company name at the bottom */}
             <div className="footer-bottom">
-                <p>&copy; 2025 Darxforge. All rights reserved.</p>
+                <p>&copy; 2025 New Fahim Enterprises. All rights reserved.</p>
+                <a href="https://darxforge.com" target="_blank" rel="noopener noreferrer">
+                    <p>Designed and Developed by Darxforge.</p>
+                </a>
             </div>
+
+
         </footer>
     );
 };
