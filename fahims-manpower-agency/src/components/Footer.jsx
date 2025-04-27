@@ -1,5 +1,5 @@
 import './Footer.css';  // Import custom CSS for styling
-import footerLogoLeft from "../assets/fahims-logo.svg"
+import footerLogoLeft from "../assets/fahims-logo.png"
 import socialMediaLogo1 from "../assets/1.svg"
 import socialMediaLogo2 from "../assets/2.svg"
 import socialMediaLogo3 from "../assets/3.svg"
