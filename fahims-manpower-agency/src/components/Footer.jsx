@@ -22,11 +22,14 @@ const Footer = () => {
 
                 {/* Right side - Logos and background image */}
                 <div className="footer-logos">
-                    <img src={socialMediaLogo1} alt="Logo 1" className="footer-social-logo"/>
-                    <img src={socialMediaLogo2} alt="Logo 2" className="footer-social-logo"/>
-                    <img src={socialMediaLogo3} alt="Logo 3" className="footer-social-logo"/>
-                    <img src={socialMediaLogo4} alt="Logo 4" className="footer-social-logo"/>
+                    <a href="https://m.facebook.com/media/set/?vanity=newfahim736&set=a.208119431542519" target="_blank" rel="noopener noreferrer">
+                        <img src={socialMediaLogo2} alt="Logo 2" className="footer-social-logo"/>
+                    </a>
+                    <a href="https://www.instagram.com/new_fahim_/" target="_blank" rel="noopener noreferrer">
+                        <img src={socialMediaLogo3} alt="Logo 3" className="footer-social-logo"/>
+                    </a>
                 </div>
+
 
             </div>
 
