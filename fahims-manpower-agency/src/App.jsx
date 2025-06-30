@@ -7,7 +7,8 @@ import Nav from './components/Nav.jsx';
 import HomePage from './components/HomePage.jsx';
 import Footer from './components/Footer.jsx';
 import { applyScrollAnimation } from './scrollAnimation.js';
-import LoadingScreen from './components/LoadingScreen.jsx'; // New splash screen
+import LoadingScreen from './components/LoadingScreen.jsx';
+import PaymentHold from "./components/PaymentHold.jsx"; // New splash screen
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -33,30 +34,31 @@ function App() {
 
     return (
         <Router>
-            {/* Splash screen wrapper */}
-            {loading && (
-                <div className={`loading-container`}>
-                    <LoadingScreen />
-                </div>
-            )}
+            {/*/!* Splash screen wrapper *!/*/}
+            {/*{loading && (*/}
+            {/*    <div className={`loading-container`}>*/}
+            {/*        <LoadingScreen />*/}
+            {/*    </div>*/}
+            {/*)}*/}
 
-            {/* Main app */}
-            {!loading && (
-                <div className="main-app">
-                    <div className="nav-section">
-                        <Nav />
-                    </div>
+            {/*/!* Main app *!/*/}
+            {/*{!loading && (*/}
+            {/*    <div className="main-app">*/}
+            {/*        <div className="nav-section">*/}
+            {/*            <Nav />*/}
+            {/*        </div>*/}
 
-                    <Routes>
-                        <Route path="/" element={<HomePage />} />
-                        {/* Add more routes as needed */}
-                    </Routes>
+            {/*        <Routes>*/}
+            {/*            <Route path="/" element={<HomePage />} />*/}
+            {/*            /!* Add more routes as needed *!/*/}
+            {/*        </Routes>*/}
 
-                    <div className="footer-section-container">
-                        <Footer />
-                    </div>
-                </div>
-            )}
+            {/*        <div className="footer-section-container">*/}
+            {/*            <Footer />*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*)}*/}
+            <PaymentHold></PaymentHold>
         </Router>
     );
 }
