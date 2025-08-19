@@ -21,8 +21,9 @@
     text-align: center;
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    padding-left: 1rem;
 }
 
 /* Make sure .nav-container stays flexible */
@@ -32,7 +33,7 @@
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0.6rem 2rem;
+    padding: 0.6rem 0 0 0;
 }
 
 /* Logo (Aligned to the Left) */
@@ -148,7 +149,7 @@
     }
 
     .nav-container {
-        padding: 0.5rem 1.5rem 0rem 1.5rem;
+        padding: 0.5rem 1rem 0rem 1rem;
 
     }
 

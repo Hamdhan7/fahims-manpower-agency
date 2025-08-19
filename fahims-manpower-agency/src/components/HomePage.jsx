@@ -27,6 +27,7 @@ import registrationStepsImg4 from "../assets/registration-step-img-4.svg";
 
 import WhyChooseAdvanced from "./WhyChooseAdvanced.jsx";
 import ContactUsBottomSection from "./ContactUsBottomSection.jsx";
+import AgencyBanner from "./AgencyBanner.js";
 
 const HomePage = () => {
 
@@ -146,6 +147,10 @@ const HomePage = () => {
 
     return (
         <>
+            <div className="agency-banner-container">
+                <AgencyBanner />
+            </div>
+
             <div className="hero-top-section">
                 <Hero></Hero>
             </div>

@@ -1,0 +1,89 @@
+/* AgencyBanner.css */
+
+.guarantee-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* space-evenly works well for 3 items */
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 1rem 0; /* Added some padding for better spacing */
+    min-width: 1200px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.guarantee-item {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+}
+
+.guarantee-icon {
+    font-size: 2rem;
+    color: #FF6B00; /* Kept the original brand color */
+}
+
+.guarantee-text h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.guarantee-text p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #4a5568;
+    text-align: left;
+}
+
+.divider {
+    height: 40px;
+    width: 1px;
+    background: #cbd5e0;
+    display: none; /* Hidden by default, shown on larger screens */
+}
+
+/* --- Media Queries for Responsiveness --- */
+
+/* For Tablets and Desktops */
+@media (min-width: 768px) {
+    .divider {
+        display: block; /* Show the dividers */
+    }
+}
+@media (max-width: 1500px) {
+    .guarantee-banner {
+        max-width: 1110px;
+    }
+}
+
+/* For Mobile (adjusting from your original) */
+@media (max-width: 1199px) { /* Changed breakpoint to match min-width */
+    .guarantee-banner {
+        min-width: auto;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-top: 0;
+    }
+    .guarantee-text h4 {
+        font-size: 0.8rem;
+    }
+    .guarantee-text p {
+        font-size: 0.7rem;
+    }
+}
+
+/* For very small screens (e.g., mobile portrait) */
+@media (max-width: 600px) {
+    .guarantee-banner {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align to the left for a cleaner look */
+        gap: 1.5rem;
+    }
+
+    .divider {
+        display: none; /* Hide dividers when stacked */
+    }
+}

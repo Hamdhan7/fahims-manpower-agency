@@ -5,10 +5,20 @@ const Hero = () => {
         <section className="hero fade-in-up">
             <div className="hero-content fade-in">
                 <h1 className="fade-in">
-                    Bridging the Gap Between <span className="employees">Employers</span> and Skilled <span className="workforce">Workforce</span>
+                    Your Trusted <span className="employees">Partner</span> for Overseas <span
+                    className="workforce">Recruitment</span> Needs.
                 </h1>
-                <p className="fade-in">New Fahim Enterprises is a leading Sri Lankan manpower agency, trusted by businesses across the Middle East and beyond. We connect skilled professionals with the right job opportunities, ensuring success for both employers and job seekers.</p>
-                <button className="hero-button fade-in-up">Let’s Work Together</button>
+                <p className="fade-in">
+                    New Fahim Enterprises specializes in sourcing elite Sri Lankan talent for leading companies in the
+                    Middle East and beyond. We simplify your hiring process, ensuring you get the dedicated workforce
+                    you need to succeed.
+                </p>
+                <a
+                    href="mailto:new_fahim@yahoo.com?subject=Consultation Request for Manpower Services"
+                    className="hero-button fade-in-up"
+                >
+                    Request a Consultation
+                </a>
             </div>
 
             {/* Image (Hidden on Mobile) */}

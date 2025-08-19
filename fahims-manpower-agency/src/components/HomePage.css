@@ -14,6 +14,10 @@
     background-color: #051237 ;
 }
 
+.agency-banner-container{
+    border-top: 1px solid #cbd5e0;
+    margin-top: 1rem;
+}
 .invest-section-hero{
     padding: 2rem;
 
@@ -51,6 +55,9 @@
         padding: 0rem 4rem;
     }
 
+    .agency-banner-container{
+        margin-top: 5rem;
+    }
 
 
 }

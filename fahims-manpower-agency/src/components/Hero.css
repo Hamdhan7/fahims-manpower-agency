@@ -20,7 +20,7 @@
     z-index: 2;
     margin-top: 1rem;
 
-    padding: 10rem 5rem 5rem 7rem;
+    padding: 7rem 5rem 5rem 7rem;
     width: 800px;
 
 }
@@ -216,7 +216,7 @@
         background-size: 42rem;
         background-repeat: no-repeat;
         flex-direction: column;
-        margin-top: 3rem;
+        margin-top: 0;
         text-align: center;
         padding: 3rem 0.2rem 30rem 0.2rem;
         border-radius: 0;
